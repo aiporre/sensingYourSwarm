@@ -10,5 +10,5 @@
 
 <h3>Robotic comunication architecture toward user</h3>
 
-<p>The robotic system's architecture is divided in three levels. At the lower place lies the mini-robots which randomly measure an field. Each of this independent units carries two sensors: one used to measure dangerous gases as butane or monoxide, and the otherone used to measure temperature levels. Moreover, these units also incopores and RF-module which based on the SPI protocol build an strar-shaped network architecture.</p>
+<p>The robotic system's architecture is divided in three levels. At the lower place lies the mini-robots which randomly measure an field. Each of this independent units carries two sensors: one used to measure dangerous gases as butane or monoxide, and the otherone used to measure temperature levels. Moreover, each of these units also incopores and RF-module which based on the SPI protocol builds an strar-shaped network architectura that sends all the information toward the next layer. Into the next layer, it is placed position-vision determination system and the guide robot, the latter  ...</p>
 
