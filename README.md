@@ -10,6 +10,14 @@
 
 <h3>Robotic comunication architecture toward user</h3>
 
-<p>The robotic system's architecture is divided in four layers. At the lower place lies the mini-robots(miniBots) which randomly measure an field. Each of this independent units carries two sensors: one used to measure dangerous gases as butane or monoxide, and the otherone used to measure temperature levels. Moreover, each of these units also incopores and RF-module which based on the SPI protocol builds an strar-shaped network architecture that sends all the information toward the next layer on that protocol. In the next layer, it is the guide-gateway robot (GGBot) who channels all the information toward the server using an http-post into json object, every post contains the identifier and the measurements asociated to each idenfier. Over the GGBot is the "Positioning Supervision System" which determines the position of each robot including the GGBot, it uses a camera and computacional color filters in order to identify each unit based on it's color. Finaly, on the top it is placed the GUI and mapping system that displays the heat map and determines the path throughout the field based on repulsive funtions path planning algorithms.</p>
+<p>The robotic system's architecture is divided in four layers. At the lower place lies the mini-robots(miniBots) which randomly measure an field. Each of this independent units carries two sensors: one used to measure dangerous gases as butane or monoxide, and the otherone used to measure temperature levels. Moreover, each of these units also incopores and RF-module which based on the SPI protocol builds an strar-shaped network architecture that sends all the information toward the next layer on that protocol. In the next layer, it is the guide-gateway robot (GGBot) who channels all the information toward the server using an http-post into json object, every post contains the identifier and the measurements asociated to each idenfier. Over the GGBot is the Positioning Supervision System (PS system) which determines the position of each robot including the GGBot, it uses a camera and computacional color filters in order to identify each unit based on it's color. Finaly, on the top it is placed the GUI and mapping system that displays the heat map and determines the path throughout the field based on repulsive funtions path planning algorithms.</p>
 
 <a href="http://es.tinypic.com?ref=25jcsco" target="_blank"><img src="http://i57.tinypic.com/25jcsco.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
+<h4>MiniBots hacking</h4>
+<h4>GGBot development</h4>
+<h4>Inside of the PS System</h4>
+<h4>presenting the dish: Graphical User Interface</h4>
+<h4>Secured path planing</h4>
+
+
+
