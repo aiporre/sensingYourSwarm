@@ -1,14 +1,14 @@
-# Sensing Your Swarm Project
+# Sensor Your Swarm Project
 
-<p>Picture a thousand of mini-robots sensing a dangerous location that allows to determine a secured path although this space and to avoid deathly objects in there. This is what our project attempts to display.</p>
+<p>Picture hundreds of mini-robots sensing dangerous area that will allow us to determine a safe path and to avoid deathly objects. This is what our project attempts to display.</p>
 
 <IMG SRC="http://i.dailymail.co.uk/i/pix/2011/08/23/article-0-02D26216000005DC-732_468x375.jpg" ALT="some text" WIDTH=320 HEIGHT=320>---------<IMG SRC="http://groups.csail.mit.edu/drl/BoeingPages/ResearchProblems/whole-swarm-from-above.jpg" ALT="some text" WIDTH=320 HEIGHT=320>
 
-<h3>Sensing an hazardous location with an swarm of random walkers</h3>
+<h3>Sensing a hazardous location with a swarm of random walkers</h3>
 
-<p>Sensing your swarm proposes an idea that rigs out humans to navigate in dangerous environments such as airplanes accidents, shipwrenks and outer space exploring situations. As a bio-inspired robotic system this proyect hands in an prototype which apes the random movement of flies swarms and applies it to measurement of risky gases and deathly temperature in hazardous locations, this multiple measurement allows to graph on a web-page a secure path throughout field skipping obstacles. Furthermore, in this project a main robot acts as seeing eye dog which could guide a person along the secured path, while it interprets all the information sented by each measurement terminal.</p>
+<p>Sensing your swarm proposes an idea that provides humans a way to navigate in dangerous environments such as airplanes accidents, shipwrenks and outer space exploring situations. As a bio-inspired robotic system, this project hands in a prototype which mimics the random movement of flies swarms and applies it to measure risky gases and deathly temperatures in hazardous locations. This multiple measurements allows us to graph on a web-page a safe path through the field dodging obstacles. Furthermore, in this project a main robot acts as a guide dog which could lead a person along the safe path while it is gathering all the information sent by each measurement terminal (mini-robot).</p>
 
-<h3>Robotic comunication architecture toward user</h3>
+<h3>Robotic architecture</h3>
 
 <p>The robotic system's architecture is divided in four layers. At the lower place lies the mini-robots(miniBots) which randomly measure an field. Each of this independent units carries two sensors: one used to measure dangerous gases as butane or monoxide, and the otherone used to measure temperature levels. Moreover, each of these units also incopores and RF-module which based on the SPI protocol builds an strar-shaped network architecture that sends all the information catched by the MiniBots towards the next layer on that protocol. In the next layer, it is the guide-gateway robot (GGBot) who channels all the information toward the server using an http-post into json object, every post contains the identifier and the measurements asociated to each idenfier. Over the GGBot is the Positioning Supervision System (PS system) which determines the position of each robot including the GGBot, it uses a camera and computacional color filters in order to identify each unit based on it's color. Finally, on the top it is placed the GUI and mapping system that displays the heat map and determines the path throughout the field based on repulsive funtions path planning algorithms.</p>
 
